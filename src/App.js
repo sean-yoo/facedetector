@@ -33,8 +33,8 @@ class App extends Component {
       input: '',
       imageUrl: '',
       box: {},
-      route: 'signin',
-      isSignedIn: false,
+      route: 'home',
+      //isSignedIn: false,
       user: {
         id: '',
         name: '',
@@ -121,27 +121,41 @@ class App extends Component {
   }
 
   render() {
-    const { isSignedIn, imageUrl, route, box } = this.state;
+    // const { isSignedIn, imageUrl, route, box } = this.state;
+    // return (
+    //   <div className="App">
+    //   <Particles className='particles'
+    //           params={particlesOptions}
+    //   />
+    //   <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange}/>
+    //   { route === 'home' 
+    //     ? <div>
+    //         <Logo />
+    //         <Rank />
+    //         <ImageLinkForm onInputChange={this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
+    //         <FaceRecognition box={box} imageUrl={imageUrl}/> 
+    //       </div>
+    //       : (
+    //           route === 'signin'
+    //           ? <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+    //           : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+    //         )
+
+    //   }
+    //   </div>
+    // );
     return (
       <div className="App">
-      <Particles className='particles'
-              params={particlesOptions}
-      />
-      <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange}/>
-      { route === 'home' 
-        ? <div>
-            <Logo />
-            <Rank />
-            <ImageLinkForm onInputChange={this.onInputChange} onButtonSubmit={this.onButtonSubmit}/>
-            <FaceRecognition box={box} imageUrl={imageUrl}/> 
-          </div>
-          : (
-              route === 'signin'
-              ? <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-              : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-            )
- 
-      }
+        <Particles className='particles'
+                params={particlesOptions}
+        />
+        <Navigation />
+        <Logo />
+        <ImageLinkForm
+          onInputChange={this.onInputChange}
+          onButtonSubmit={this.onButtonSubmit}
+        />
+        <FaceRecognition box={this.state.box} imageUrl={this.state.imageUrl} />
       </div>
     );
   }
