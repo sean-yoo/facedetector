@@ -149,7 +149,7 @@ class App extends Component {
         <Particles className='particles'
                 params={particlesOptions}
         />
-        <Navigation />
+//        <Navigation />
         <Logo />
         <ImageLinkForm
           onInputChange={this.onInputChange}
