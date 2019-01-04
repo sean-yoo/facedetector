@@ -20,7 +20,7 @@ import React from 'react';
 const Navigation = () => {
 	return (
 		<nav>
-			<p> </p>
+			<p>Face Detector</p>
 		</nav>
 	)
 }

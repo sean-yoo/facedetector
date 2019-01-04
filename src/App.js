@@ -146,9 +146,7 @@ class App extends Component {
     // );
     return (
       <div className="App">
-        <Particles className='particles'
-                params={particlesOptions}
-        />
+        <Particles className='particles'params={particlesOptions}/>
         <Navigation />
         <Logo />
         <ImageLinkForm
