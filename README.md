@@ -1,5 +1,6 @@
 # facedetector
 View app through link: https://sean-yoo.github.io/facedetector/
+Example image url for testing: https://www.uni-regensburg.de/Fakultaeten/phil_Fak_II/Psychologie/Psy_II/beautycheck/english/durchschnittsgesichter/m(01-32)_gr.jpg
 
 Face Recognition WebApp
 Created by: Sean Yoo
