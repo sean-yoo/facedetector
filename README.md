@@ -1,4 +1,6 @@
 # facedetector
+View app through link: https://sean-yoo.github.io/facedetector/
+
 Face Recognition WebApp
 Created by: Sean Yoo
 
